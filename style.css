@@ -24,7 +24,6 @@ html {
 body {
     min-height: 100vh;
     background: url(./images/bg-desktop.svg) no-repeat;
-    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -33,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 80px;
+    padding: 60px 80px 0;
     margin: auto;
 }
 .page {
@@ -57,11 +56,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .body__left {
     width: 100%;
-    flex: 0 0 50%;
+    flex: 0 0 54.7%;
 }
 .body__left img {
     width: 100%;
@@ -70,24 +69,30 @@ body {
     object-fit: cover;
 }
 .body__right {
+    flex: 1;
     margin-left: 55px;
+    margin-top: 50px;
 }
 .page__body .body__right .title {
     font-weight: 700;
     color: #fff;
-    font-size: 38px;
+    font-size: 35px;
 }
-.page__body .body__right p {
-    margin-top: 35px;
+.page__body .body__right .title span {
+    display: block;
+}
+.page__body .body__right .des {
+    margin-top: 40px;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    font-size: 18.1px;
+    color: #e8dffb;
 }
 .btn {
-    margin-top: 25px;
+    margin-top: 20px;
     width: 200px;
     background: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     border-radius: 50px;
     box-shadow: 10px 5px 20px #4b3c87;
     cursor: pointer;
@@ -100,6 +105,7 @@ body {
 .page__social {
     display: flex;
     margin-left: auto;
+    margin-top: 20px;
 }
 .page__social a {
     display: flex;
@@ -126,11 +132,11 @@ footer {
 @media screen and (max-width: 1221px) {
     body {
     background: url(./images/bg-mobile.svg) no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     }
     .container {
-        padding: 75px 80px;
+        padding: 70px 80px;
     }
     .page {
         max-width: 750px;
@@ -141,6 +147,7 @@ footer {
     .page__body { 
         flex-direction: column;
         text-align: center;
+        margin-top: 135px;
     }
     .body__right {
         display: flex;
@@ -150,17 +157,31 @@ footer {
         margin: 0;
         margin-top: 135px;
     }
-    .body__right .title {
-        padding: 0 40px;
-        
+    .page__body .body__right .title {
+        font-size: 45px;        
     }
-    .page .body__right p {
+    .page__body .body__right .des {
+        margin-top: 50px;
+        font-size: 31px;
+    }
+    .page .btn {
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+    .page .btn a {
         font-size: 25px;
-        line-height: 1.6;
     }
-    .page__social {
+    .page .page__social {
         display: flex;
         margin: 120px auto 0;
+    }
+    .page__social a {
+        width: 60px;
+        height: 60px;
+        border: 2px solid #fff;
+    }
+    .page__social a .fab {
+        font-size: 25px;
     }
     .btn {
         width: 400px;
