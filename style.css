@@ -61,6 +61,7 @@ body {
 }
 .body__left {
     width: 100%;
+    flex: 0 0 50%;
 }
 .body__left img {
     width: 100%;
