@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 80px 40px;
+    padding: 40px 80px;
     margin: auto;
 }
 .page {
@@ -74,6 +74,7 @@ body {
 .page__body .body__right .title {
     font-weight: 700;
     color: #fff;
+    font-size: 38px;
 }
 .page__body .body__right p {
     margin-top: 35px;
@@ -150,7 +151,7 @@ footer {
     }
     .body__right .title {
         padding: 0 40px;
-        font-size: 38px;
+        
     }
     .page .body__right p {
         font-size: 25px;
